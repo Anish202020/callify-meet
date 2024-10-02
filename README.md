@@ -1,25 +1,12 @@
 # Callify - Video Conferencing App
 <img src="https://github.com/Anish202020/callify-meet/blob/main/public/data/logo-removebg-preview.png" width="100" alt="accessibility text">
 
-## Table of Contents
-1. [﻿Introduction](https://#introduction)
-2. [Dataflow Diagram](https://#dataflow)
-3. [﻿Authentication](https://#authentication) 
-4. [﻿New Meeting](https://#new-meeting) 
-5. [﻿Meeting Controls](https://#meeting-controls) 
-6. [﻿Exit Meeting](https://#exit-meeting) 
-7. [﻿Schedule Future Meetings](https://#schedule-future-meetings) 
-8. [﻿Past Meetings List](https://#past-meetings-list) 
-9. [﻿View Recorded Meetings](https://#view-recorded-meetings) 
-10. [﻿Personal Room](https://#personal-room) 
-11. [﻿Join Meetings via Link](https://#join-meetings-via-link) 
-12. [﻿Secure Real-time Functionality](https://#secure-real-time-functionality) 
-13. [﻿Responsive Design](https://#responsive-design) 
+
 ## Introduction
+[![Watch the video](https://github.com/Anish202020/callify-meet/blob/main/public/data/Business.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
+
 Callify is a video conferencing application designed to provide secure, real-time communication with a range of features to enhance user experience. This documentation outlines the key functionalities and features of the Callify app.
 
-## Dataflow
-<img src="https://github.com/Anish202020/callify-meet/blob/main/public/data/diagram-export-10-2-2024-11_58_31-AM.png" alt="accessibility text">
 
 ## Technologies Used
 1. Next Js
@@ -75,5 +62,37 @@ All interactions within the platform are secure and occur in real-time, maintain
 ## Responsive Design
 Callify follows responsive design principles to ensure an optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
 
+## Dataflow
 
+<details>
+  <summary>Click to See The DataFlow Diagram</summary>
+  
+  
+  <img src="https://github.com/Anish202020/callify-meet/blob/main/public/data/diagram-export-10-2-2024-11_58_31-AM.png" alt="accessibility text">
+
+  The Dataflow Diagram of Complete Interaction of the Callify - Video Conferencing App is Above.
+</details>
+
+## Team Members
+1. Aditya Jyoti Sahu - 1AY21CS017
+2. Anish Kumar - 1AY21CS028
+3. Dalavai Hruday - 1AY21CS049
+4. Hanji Ranjan - 1AY21CS060
+
+---
+First Install NPM Packages
+```bash
+npm i react-icons 
+```
+
+
+Second, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
