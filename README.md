@@ -1,8 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Callify - Video Conferencing App
 
-## Getting Started
+[![Watch the video](https://github.com/Anish202020/callify-meet/blob/main/public/data/Business.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
 
-First, run the development server:
+## Introduction
+<img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Website%20Logos/1.png" width="100" alt="accessibility text">
+
+Callify is a video conferencing application designed to provide secure, real-time communication with a range of features to enhance user experience. This documentation outlines the key functionalities and features of the Callify app.
+
+
+## Technologies Used
+
+<details>
+  <summary>Click to See The Technology Stack</summary>
+  
+  1. Next Js
+  2. Tailwind Css 
+  3. Clerk
+  4. Get Stream
+  6. Aceternity UI
+  5. Shad Cn
+
+<p align="center">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Technology%20Stack%20Logos/technology-stack.png" height="50" alt="accessibility text">
+
+  <p align="center">Technology Stack</p>
+ </p>
+
+
+</details>
+
+## Authentication
+Callify implements authentication and authorization features using Clerk. Users can securely log in via:
+
+- Social sign-on
+- Traditional email and password methods
+- Biometric authentication
+Appropriate access levels and permissions are ensured within the platform.
+
+## New Meeting
+Users can quickly start a new meeting, configuring camera and microphone settings before joining.
+
+## Meeting Controls
+Participants have full control over various aspects of the meeting, including:
+
+- Recording
+- Emoji reactions
+- Screen sharing
+- Muting/unmuting
+- Sound adjustments
+- Grid layout
+- Participant list view
+- Individual participant management (pinning, muting, unmuting, blocking, allowing video share)
+## Exit Meeting
+Participants can leave a meeting individually, or creators can end the meeting for all attendees.
+
+## Schedule Future Meetings
+Users can schedule future meetings by inputting meeting details (date, time). These meetings are accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
+
+## Past Meetings List
+Users can access a list of previously held meetings, including details and metadata.
+
+## View Recorded Meetings
+Users can access recordings of past meetings for review or reference.
+
+## Personal Room
+Each user has a personal room with a unique meeting link for instant meetings, which can be shared with others.
+
+## Join Meetings via Link
+Users can easily join meetings created by others by providing a link.
+
+## Secure Real-time Functionality
+All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
+
+## Responsive Design
+Callify follows responsive design principles to ensure an optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
+
+## Dataflow
+
+<details>
+  <summary>Click to See The DataFlow Diagram</summary>
+  
+  
+  <img src="https://github.com/Anish202020/callify-meet/blob/main/public/data/diagram-export-10-2-2024-11_58_31-AM.png" alt="accessibility text">
+
+  The Dataflow Diagram of Complete Interaction of the Callify - Video Conferencing App is Above.
+</details>
+
+## Team Members
+1. Aditya Jyoti Sahu - 1AY21CS017
+2. Anish Kumar - 1AY21CS028
+3. Dalavai Hruday - 1AY21CS049
+4. Hanji Ranjan - 1AY21CS060
+
+---
+First Install NPM Packages
+```bash
+npm i react-icons 
+```
+
+
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +107,5 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
