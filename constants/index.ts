@@ -25,4 +25,9 @@ export const sidebarLinks = [
       route: '/personal-room',
       label: 'Personal Room',
     },
+    {
+      imgURL: '/icons/Explanation.svg',
+      route: '/explanation',
+      label: 'Explanation',
+    },
   ];
