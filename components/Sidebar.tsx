@@ -1,6 +1,7 @@
 "use client";
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -19,7 +20,9 @@ const Sidebar = () => {
                 href={link.route} 
                 key={link.label} 
                 className={cn('flex gap-4 items-center p-4 rounded-lg justify-start',{'bg-blue-1':isActive})}>
-              {link.label}
+              
+              <Image src={link.imgURL} alt={link.label} width={25} height={25}/>
+              <p className="font-semibold max-lg:hidden">{link.label}</p>
             </Link>
           );
         })}
