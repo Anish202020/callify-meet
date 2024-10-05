@@ -1,3 +1,4 @@
+// Navigation Links
 export const sidebarLinks = [
     {
       imgURL: '/icons/Home.svg',
@@ -31,7 +32,7 @@ export const sidebarLinks = [
       label: 'Explanation',
     },
   ];
-
+// Teams
   export const cards = [
     {
       title: "Aditya Jyoti Sahu",
