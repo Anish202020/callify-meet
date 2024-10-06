@@ -1,10 +1,41 @@
+import MeetingTypeList from '@/components/MeetingTypeList';
 import React from 'react'
 
 const Home = () => {
   const now = new Date();
 
-  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit',timeZone: 'Asia/Kolkata' });
-  const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full',timeZone: 'Asia/Kolkata' })).format(now);
+  // const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit',timeZone: 'Asia/Kolkata' });
+  // const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full',timeZone: 'Asia/Kolkata' })).format(now);
+  
+  function updateTimeAndDate() {
+    const now = new Date();
+
+    const time = now.toLocaleTimeString('en-US', { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      second: '2-digit',  // To show live seconds update
+      timeZone: 'Asia/Kolkata'
+    });
+
+    const date = new Intl.DateTimeFormat('en-US', { 
+      dateStyle: 'full', 
+      timeZone: 'Asia/Kolkata' 
+    }).format(now);
+
+    return {date,time}
+  }
+  // Update time and date every second (1000 milliseconds)
+  setInterval(updateTimeAndDate, 1000);
+
+  // Initial call to set the time and date immediately when page loads
+  const date = updateTimeAndDate().date
+  const time = updateTimeAndDate().time
+  
+  
+  
+  
+  
+  
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
       <div className='h-[350px] w-full rounded-[20px] bg-hero bg-cover'>
@@ -18,7 +49,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+      <MeetingTypeList/>
       <h1 className='text-3xl font-bold'>
         Home
       </h1>
