@@ -1,35 +1,18 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
 import React from 'react'
+import { useState, useEffect } from 'react';
+// import date from "@/components/Time"
+// import time from "@/components/Time"
 
 const Home = () => {
+
+  
   const now = new Date();
 
-  // const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit',timeZone: 'Asia/Kolkata' });
-  // const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full',timeZone: 'Asia/Kolkata' })).format(now);
+  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit',timeZone: 'Asia/Kolkata' });
+  const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full',timeZone: 'Asia/Kolkata' })).format(now);
   
-  function updateTimeAndDate() {
-    const now = new Date();
-
-    const time = now.toLocaleTimeString('en-US', { 
-      hour: '2-digit', 
-      minute: '2-digit',
-      second: '2-digit',  // To show live seconds update
-      timeZone: 'Asia/Kolkata'
-    });
-
-    const date = new Intl.DateTimeFormat('en-US', { 
-      dateStyle: 'full', 
-      timeZone: 'Asia/Kolkata' 
-    }).format(now);
-
-    return {date,time}
-  }
-  // Update time and date every second (1000 milliseconds)
-  setInterval(updateTimeAndDate, 1000);
-
-  // Initial call to set the time and date immediately when page loads
-  const date = updateTimeAndDate().date
-  const time = updateTimeAndDate().time
+  
   
   
   
@@ -41,7 +24,7 @@ const Home = () => {
       <div className='h-[350px] w-full rounded-[20px] bg-hero bg-cover'>
       <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
           <h2 className="glassmorphism max-w-[273px] rounded text-black py-2 text-center text-base font-extrabold">
-            Callify - Where People Meet
+            Callify - Where People Connect
           </h2>
           <div className="flex flex-col gap-2">
             <h1 className="text-4xl font-extrabold text-black lg:text-7xl">{time}</h1>
