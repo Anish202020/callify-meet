@@ -38,8 +38,10 @@ const Time = ({children}:{children:ReactNode}) => {
         // Cleanup interval on component unmount
         return () => clearInterval(intervalId);
       }, []);
+
+    const time1= time
   return (
-    {time,date}
+    {time1}
       
     
   )
