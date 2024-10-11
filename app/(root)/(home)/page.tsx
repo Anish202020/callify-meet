@@ -4,9 +4,12 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { Lens } from "@/components/ui/lens";
-
+import { FlipWords } from "@/components/ui/flip-words";
 
 const Home = () => {
+
+  // Flipwords -- 
+  const words = ["The Power of Connection", "Bridging People Effortlessly", "Conversations That Matter", "Where Voices Unite"];
 
   // Date
   const [time, setTime] = useState<string>('');
@@ -60,7 +63,7 @@ const Home = () => {
 
             <div className="flex h-full flex-col gap-7 justify-between max-md:px-5 max-md:py-8 lg:p-11">
               <h2 className="glassmorphism max-w-[273px] rounded text-black py-2 text-center text-base font-extrabold">
-                Callify - Where People Connect
+                <FlipWords words={words} />
               </h2>
               <div className="flex flex-col gap-2">
                 <h1 className="text-4xl font-extrabold text-black lg:text-7xl">{time}</h1>
