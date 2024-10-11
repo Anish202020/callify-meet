@@ -9,7 +9,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 const Home = () => {
 
   // Flipwords -- 
-  const words = ["The Power of Connection", "Bridging People Effortlessly", "Conversations That Matter", "Where Voices Unite"];
+  const words = ["The Power of Connection", "Bridging People Effortlessly", "Conversations That Matters", "Where Voices Unite"];
 
   // Date
   const [time, setTime] = useState<string>('');
