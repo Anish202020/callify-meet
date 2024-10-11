@@ -5,11 +5,9 @@ import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { Lens } from "@/components/ui/lens";
 import { FlipWords } from "@/components/ui/flip-words";
+import { words } from '@/constants';
 
 const Home = () => {
-
-  // Flipwords -- 
-  const words = ["The Power of Connection", "Bridging People Effortlessly", "Conversations That Matters", "Where Voices Unite"];
 
   // Date
   const [time, setTime] = useState<string>('');

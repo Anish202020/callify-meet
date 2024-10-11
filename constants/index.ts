@@ -55,3 +55,15 @@ export const sidebarLinks = [
       src: "/team/ajith_sir.png",
     }
   ]
+
+// Flipwords --
+export const words = [
+  
+    "The Power of Connection", 
+
+  "Bridging People Effortlessly", 
+  
+  "Conversations That Matters", 
+  
+  "Where Voices Unite"
+  ];
