@@ -1,6 +1,6 @@
 # Callify - Video Conferencing App
 
-[![Watch the video](https://github.com/Anish202020/callify-meet/blob/main/public/data/Business.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
+[![Watch the video](https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/callify%20banner%2050%25%20done.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
 
 ## Introduction
 <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Website%20Logos/1.png" width="100" alt="accessibility text">
