@@ -1,12 +1,24 @@
 # Callify - Video Conferencing App
 
-[![Watch the video](https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/callify%20banner%2050%25%20done.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
+![Callify Gif](https://github.com/Anish202020/Web-Development-Data/blob/main/Videos/Business.gif)
+
 
 ## Introduction
 <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Website%20Logos/1.png" width="100" alt="accessibility text">
 
 Callify is a video conferencing application designed to provide secure, real-time communication with a range of features to enhance user experience. This documentation outlines the key functionalities and features of the Callify app.
 
+## Video Explanation
+
+
+<details>
+  <summary>Video Explanation of Callify</summary>
+  <p>
+    
+[![Watch the video](https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/callify%20banner%2050%25%20done.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
+
+  </p>
+</details>
 
 ## Technologies Used
 
