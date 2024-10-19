@@ -1,7 +1,20 @@
 # Callify - Video Conferencing App
 
 ![Callify Gif](https://github.com/Anish202020/Web-Development-Data/blob/main/Videos/Business.gif)
+<p align="center">
+  
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-3D2EFC?style=for-the-badge&logo=clerk&logoColor=white)
+![GetStream](https://img.shields.io/badge/GetStream-087EE1?style=for-the-badge&logo=getstream&logoColor=white&logoWidth=20)
 
+
+![Shad CN](https://img.shields.io/badge/ShadCN-000000?style=for-the-badge&logo=shadcn&logoColor=white)
+![Acenternity UI](https://img.shields.io/badge/Acenternity_UI-000000?style=for-the-badge&logo=ui-accent&logoColor=white)
+
+
+</p>
 
 ## Introduction
 <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Website%20Logos/1.png" width="100" alt="accessibility text">
@@ -9,16 +22,7 @@
 Callify is a video conferencing application designed to provide secure, real-time communication with a range of features to enhance user experience. This documentation outlines the key functionalities and features of the Callify app.
 
 ## Video Explanation
-
-
-<details>
-  <summary>Video Explanation of Callify</summary>
-  <p>
-    
-[![Watch the video](https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/callify%20banner%2050%25%20done.png)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
-
-  </p>
-</details>
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=black&label=Explanation)](https://www.youtube.com/watch?v=-muNwJdUUJ4)
 
 ## Technologies Used
 
@@ -36,6 +40,9 @@ Callify is a video conferencing application designed to provide secure, real-tim
   <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Technology%20Stack%20Logos/technology-stack.png" height="50" alt="accessibility text">
 
   <p align="center">Technology Stack</p>
+  
+ 
+
  </p>
 
 
