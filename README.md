@@ -1,6 +1,6 @@
 # Callify - Video Conferencing App
 
-![Callify Gif](https://github.com/Anish202020/Web-Development-Data/blob/main/Videos/Business.gif)
+![Callify Gif](https://github.com/Anish202020/Web-Development-Data/blob/main/GIFs/Business.gif)
 <p align="center">
   
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
