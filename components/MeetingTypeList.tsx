@@ -38,7 +38,7 @@ const MeetingTypeList = () => {
 
     try {
       if(!values.dateTime){
-        toast({title: "Please select a date and time"})
+        toast({title: "Please select a date and time",variant: "destructive"})
         return;
       }
 
@@ -67,12 +67,12 @@ const MeetingTypeList = () => {
         router.push(`/meeting/${call.id}`)
 
       }
-      toast({title: "Meeting Created"})
+      toast({title: "Meeting Created",variant: "success"})
     } catch (error) {
       console.log(error)
       toast({
         title: "Failed to create meeting",
-       
+       variant: "destructive"
       })
     }
   }
