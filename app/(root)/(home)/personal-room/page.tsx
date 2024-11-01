@@ -1,3 +1,4 @@
+import { ProfileDetails } from '@/components/ProfileDetails'
 import React from 'react'
 
 const PersonalRoom = () => {
@@ -6,6 +7,7 @@ const PersonalRoom = () => {
     <h1 className='text-3xl font-bold'>
       Personal Room
     </h1>
+    <ProfileDetails/>
   </section>
   )
 }
