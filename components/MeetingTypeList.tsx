@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 import HomeCard from './HomeCard'
 import { useRouter } from 'next/navigation';
 import MeetingModal from './MeetingModal';
+import { useUser } from '@clerk/nextjs';
+import { Call, useStreamVideoClient } from '@stream-io/video-react-sdk';
+import { useToast } from '@/hooks/use-toast';
+
 
 const MeetingTypeList = () => {
 
@@ -13,8 +17,64 @@ const MeetingTypeList = () => {
     'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined
   >(undefined);
 
-  const createMeeting=()=>{
-    
+  // Getting the user from Clerk Authentication 
+  const {user} = useUser();
+
+  const client = useStreamVideoClient()
+  const [values,setValues] = useState({
+    dateTime: new Date(),
+    description:"",
+    link : ""
+  })
+
+  const [callDetails,setCallDetails] = useState<Call>()
+
+  // Toasts
+  const {toast} = useToast()
+
+  const createMeeting= async ()=>{
+    // Exit meeting as no client is there
+    if(!client || !user) return;
+
+    try {
+      if(!values.dateTime){
+        toast({title: "Please select a date and time"})
+        return;
+      }
+
+      // Creating meeting ID For a unique meeting
+      const id = crypto.randomUUID()
+      // Creating the call
+      const call = client.call('default',id);
+
+      if(!call) throw new Error("Failed to create call")
+
+      const startsAt = values.dateTime.toISOString() || new Date(Date.now()).toISOString()
+
+      const description = values.description || 'Instant meeting'
+
+      await call.getOrCreate({
+        data:{
+          starts_at:startsAt,
+          custom:{
+            description
+          }
+        }
+      })
+
+      setCallDetails(call);
+      if(!values.description){
+        router.push(`/meeting/${call.id}`)
+
+      }
+      toast({title: "Meeting Created"})
+    } catch (error) {
+      console.log(error)
+      toast({
+        title: "Failed to create meeting",
+       
+      })
+    }
   }
 
 
