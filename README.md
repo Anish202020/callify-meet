@@ -33,11 +33,18 @@ Callify is a video conferencing application designed to provide secure, real-tim
   2. Tailwind Css 
   3. Clerk
   4. Get Stream
-  6. Aceternity UI
   5. Shad Cn
+  6. Aceternity UI
 
 <p align="center">
-  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Technology%20Stack%20Logos/technology-stack.png" height="50" alt="accessibility text">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Services%20Logos/3.png" height="50" alt="accessibility text">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Services%20Logos/7.png" height="50" alt="accessibility text">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Services%20Logos/16.png" height="50" alt="accessibility text">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Services%20Logos/12.png" height="50" alt="accessibility text">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Services%20Logos/14.png" height="50" alt="accessibility text">
+  <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Logos/Services%20Logos/15.png" height="50" alt="accessibility text">
+
+  
 
   <p align="center">Technology Stack</p>
   
