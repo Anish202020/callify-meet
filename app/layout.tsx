@@ -32,6 +32,7 @@ export default function RootLayout({
         layout: {
           socialButtonsVariant: "iconButton",
           logoImageUrl: "/icons/callify_logo.svg",
+          unsafe_disableDevelopmentModeWarnings: true,
         },
         // variables: {
         //   colorText: "#000",
