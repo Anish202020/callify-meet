@@ -50,6 +50,9 @@ const Home = () => {
 
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
+      <h1 className='text-3xl font-bold'>
+      Home
+    </h1>
       {/* <Lens hovering={hovering} setHovering={setHovering}>
         <div className='h-[350px] cursor-pointer w-full rounded-[20px] bg-hero bg-cover'>
           <motion.div
