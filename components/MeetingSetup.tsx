@@ -4,9 +4,8 @@ import { error } from 'console'
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 
-const MeetingSetup = () => {
+const MeetingSetup = ({ setIsSetupComplete}:{setIsSetupComplete:(value:boolean)=>void}) => {
 
-//  const MeetingSet
 
   //On and Off of Mic and Video Service 
   const [isMicCamToggleOn,setIsMicCamToggleOn] = useState(false)
@@ -43,7 +42,9 @@ const MeetingSetup = () => {
         </label>
         <DeviceSettings/>
       </div>
-      <Button className='rounded-md bg-white px-4 py-2.5 font-bold text-black hover:bg-gray-300' onClick={()=>{call.join()}}>
+      <Button className='rounded-md bg-white px-4 py-2.5 font-bold text-black hover:bg-gray-300' onClick={()=>{
+        call.join() 
+        setIsSetupComplete(true);}}>
         Join Meeting
       </Button>
     </div>
