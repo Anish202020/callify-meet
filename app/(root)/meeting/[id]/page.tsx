@@ -1,13 +1,22 @@
 "use client"
 import { useUser } from '@clerk/nextjs'
-import React from 'react'
+import { StreamCall, StreamTheme } from '@stream-io/video-react-sdk'
+import React, { useState } from 'react'
 
 const Meeting = ({params}:{params:{id:string}}) => {
-  const user= useUser() 
+  const {user,isLoaded}= useUser() 
+  const [isSetupComplete,setIsSetupComplete] = useState(false)
+  
   return (
-    <div>
-        <div>Meeting Room: #{params.id}</div>
-    </div>
+    <main className='h-screen w-full'>
+      <StreamCall>
+        <StreamTheme>
+          {!isSetupComplete?(
+            'Meeting Setup'
+          ): ('Meeting Room')}
+        </StreamTheme>
+      </StreamCall>
+    </main>
   )
 }
 
