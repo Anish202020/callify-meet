@@ -118,20 +118,37 @@ Callify follows responsive design principles to ensure an optimal user experienc
 3. Dalavai Hruday - 1AY21CS049
 4. Hanji Ranjan - 1AY21CS060
 
----
-First Install NPM Packages
+## Getting Started
+### Prerequisites
+Node.js
+Clerk and GetStream API keys
+
+## Installation
+### Clone the repository:
 ```bash
-npm i react-icons 
+git clone https://github.com/Anish202020/callify-meet.git
+cd callify-meet
 ```
 
+### Install dependencies:
+```bash
 
-Second, run the development server:
+npm install
+```
+### Set up environment variables for Clerk and GetStream(.env.local) .
+```bash
 
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+NEXT_PUBLIC_STREAM_API_KEY=
+STREAM_SECRET_KEY=
+```
+
+### Start the application:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
+---
