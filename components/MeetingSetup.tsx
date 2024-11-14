@@ -30,23 +30,6 @@ const MeetingSetup = ({ setIsSetupComplete }: { setIsSetupComplete: (value: bool
       call?.microphone.enable()
 
     }
-
-    if (isCamToggleOn) {
-      call?.camera.disable()
-      // call?.microphone.disable()
-    } else {
-      call?.camera.enable()
-      // call?.microphone.enable()
-
-    }
-    if (isMicToggleOn) {
-      // call?.camera.disable()
-      call?.microphone.disable()
-    } else {
-      // call?.camera.enable()
-      call?.microphone.enable()
-
-    }
   }, [isMicCamToggleOn, call?.camera, call?.microphone])
   return (
     <div className='flex h-screen w-full flex-col items-center justify-center gap-3 text-white'>
