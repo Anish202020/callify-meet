@@ -19,6 +19,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Callify",
   description: "Callify - Video Conferencing App",
+  icons:{
+    icon: "/data/callify.png"
+  }
 };
 
 export default function RootLayout({

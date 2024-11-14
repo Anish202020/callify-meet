@@ -1,6 +1,16 @@
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
+import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+
+export const metadata: Metadata = {
+  title: "Callify",
+  description: "Callify - Video Conferencing App",
+  icons:{
+    icon: "/data/callify.png"
+  }
+};
+
 
 const HomeLayout = ({children}:{children:ReactNode}) => {
   return (
