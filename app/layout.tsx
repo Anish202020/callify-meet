@@ -29,30 +29,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ClerkProvider
-      appearance={{
-        layout: {
-          socialButtonsVariant: "iconButton",
-          logoImageUrl: "/icons/callify_logo.svg",
-          unsafe_disableDevelopmentModeWarnings: true,
-        },
-        // variables: {
-        //   colorText: "#000",
-        //   colorPrimary: "#000",
-        //   colorBackground: "#000",
-        //   colorInputBackground: "#fff",
-        //   colorInputText: "000",
-        // },
-      }}
+        appearance={{
+          layout: {
+            socialButtonsVariant: "iconButton",
+            logoImageUrl: "/icons/callify_logo.svg",
+            unsafe_disableDevelopmentModeWarnings: true,
+          },
+          // variables: {
+          //   colorText: "#000",
+          //   colorPrimary: "#000",
+          //   colorBackground: "#000",
+          //   colorInputBackground: "#fff",
+          //   colorInputText: "000",
+          // },
+        }}
       >
-      
-      <body
-        
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark-2`}
+
+        <body
+
+          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark-2`}
         >
-        {children}
-        <Toaster/>
-      </body>
-        </ClerkProvider>
+          {children}
+          <Toaster />
+        </body>
+      </ClerkProvider>
     </html>
   );
 }
