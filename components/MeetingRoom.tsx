@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import { Chat } from 'stream-chat-react';
 import {
   CallControls,
   CallParticipantsList,
@@ -34,6 +33,7 @@ const MeetingRoom = () => {
   const [showParticipants, setShowParticipants] = useState(false);
   const { useCallCallingState } = useCallStateHooks();
 
+  // for more detail about types of CallingState see: https://getstream.io/video/docs/react/ui-cookbook/ringing-call/#incoming-call-panel
   const callingState = useCallCallingState();
 
   if (callingState !== CallingState.JOINED) return <Loader />;
@@ -56,25 +56,24 @@ const MeetingRoom = () => {
           <CallLayout />
         </div>
         <div
-          className={cn('h-[calc(100vh-86px)] hidden ml-2', {
-            'show-block': showParticipants,
+          className={cn('h-[calc(90vh-106px)] w-80 hidden ml-2', {
+            'show block': showParticipants,
           })}
         >
           <CallParticipantsList onClose={() => setShowParticipants(false)} />
         </div>
       </div>
+      <CallParticipantsList onClose={() => setShowParticipants(true)} />
       {/* video layout and call controls */}
       <div className="fixed bottom-0 flex w-full items-center justify-center gap-5">
         <CallControls onLeave={() => router.push(`/`)} />
 
-          {/* Drop Menu is here */}
         <DropdownMenu>
           <div className="flex items-center">
             <DropdownMenuTrigger className="cursor-pointer rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]  ">
               <LayoutList size={20} className="text-white" />
             </DropdownMenuTrigger>
           </div>
-          {/* Speaker Left, Speaker Right , Grid Options are here  */}
           <DropdownMenuContent className="border-dark-1 bg-dark-1 text-white">
             {['Grid', 'Speaker-Left', 'Speaker-Right'].map((item, index) => (
               <div key={index}>
@@ -96,6 +95,7 @@ const MeetingRoom = () => {
             <Users size={20} className="text-white" />
           </div>
         </button>
+
         {!isPersonalRoom && <EndCallButton />}
       </div>
     </section>
