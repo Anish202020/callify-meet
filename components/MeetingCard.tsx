@@ -50,7 +50,7 @@ const MeetingCard = ({
               alt="logo"
               width={40}
               height={40}
-              className={cn("rounded-full glassmorphism", { absolute: index > 0 })}
+              className={cn("rounded-[10px] glassmorphism", { absolute: index > 0 })}
               style={{ top: 0, left: index * 28 }}
             />
           ))}
