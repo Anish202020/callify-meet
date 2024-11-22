@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Lens } from "@/components/ui/lens";
 import { FlipWords } from "@/components/ui/flip-words";
 import { words } from '@/constants';
+import CallList from '@/components/CallList';
 
 const Home = () => {
 
@@ -50,9 +51,7 @@ const Home = () => {
 
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
-      {/* <h1 className='text-3xl font-bold'>
-      Home
-    </h1> */}
+      
       <Lens hovering={hovering} setHovering={setHovering}>
         <div className='h-[350px] cursor-pointer w-full rounded-[20px] bg-hero bg-cover'>
           <motion.div
@@ -78,9 +77,10 @@ const Home = () => {
       </Lens>
 
       <MeetingTypeList />
-      {/* <h1 className='text-3xl font-bold'>
-        Home
-      </h1> */}
+      <h1 className='text-3xl font-bold'>
+        Upcoming Meetings 🎉
+      </h1>
+      <CallList type="upcoming"/>
     </section>
   )
 }
