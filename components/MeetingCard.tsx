@@ -41,7 +41,7 @@ const MeetingCard = ({
         </div>
       </article>
       <article className={cn("flex justify-center relative", {})}>
-        <div className="relative flex w-full max-sm:hidden glassmorphism size-11 flex-center rounded-[10px]">
+        <div className="flex max-sm:hidden glassmorphism size-11 rounded-[10px]">
          
             <Image
               src="/icons/callify_logo.svg"
