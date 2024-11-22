@@ -53,7 +53,9 @@ const PersonalRoom = () => {
         },
       });
     }
-
+    toast({
+      title: "Meeting Started",
+    });
     router.push(`/meeting/${meetingId}?personal=true`);
   };
 
