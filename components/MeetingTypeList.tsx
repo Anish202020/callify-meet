@@ -123,10 +123,10 @@ const MeetingTypeList = () => {
         <MeetingModal
         isOpen={meetingState==='isScheduleMeeting'}
         onClose={()=> setMeetingState(undefined)}
-        title="Create Meeting"
+        title="Schedule a Meeting"
         className="text-center"
         image="/icons/callify_logo.svg"
-        buttonText="Start Meeting"
+        buttonText="Schedule Meeting"
         handleClick={createMeeting}
       >
         <div className="flex flex-col gap-2.5">
