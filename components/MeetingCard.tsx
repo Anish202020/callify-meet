@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
-import { avatarImages } from "@/constants";
 import { useToast } from "@/hooks/use-toast";
 
 interface MeetingCardProps {
@@ -42,21 +41,18 @@ const MeetingCard = ({
         </div>
       </article>
       <article className={cn("flex justify-center relative", {})}>
-        <div className="relative flex w-full max-sm:hidden">
-          {avatarImages.map((img, index) => (
+        <div className="relative flex w-full max-sm:hidden glassmorphism size-11 flex-center rounded-[10px]">
+         
             <Image
-              key={index}
-              src={img}
+              src="/icons/callify_logo.svg"
               alt="attendees"
               width={40}
               height={40}
-              className={cn("rounded-full", { absolute: index > 0 })}
-              style={{ top: 0, left: index * 28 }}
+              className={cn("rounded-full")}
+              
             />
-          ))}
-          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-            +5
-          </div>
+         
+          
         </div>
         {!isPreviousMeeting && (
           <div className="flex gap-2">
