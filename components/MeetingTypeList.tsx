@@ -134,7 +134,8 @@ const MeetingTypeList = () => {
               Add a description
             </label>
             <Textarea
-              className="border-none bg-dark-2 focus-visible:ring-0 focus-visible:ring-offset-0"
+              placeholder='Description of your Meeting Here!'
+              className="border-none bg-dark-2 focus-visible:ring-0 focus:border-green-200 focus-visible:ring-offset-0"
               onChange={(e) =>
                 setValues({ ...values, description: e.target.value })
               }
