@@ -42,7 +42,7 @@ const MeetingCard = ({
         </div>
       </article>
       <article className={cn("flex justify-center relative", {})}>
-      <div className="relative flex w-full max-sm:hidden">
+      <div className="relative glassmorphism flex w-full max-sm:hidden">
           {avatarImages.map((img, index) => (
             <Image
               key={index}
