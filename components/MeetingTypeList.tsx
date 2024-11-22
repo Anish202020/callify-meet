@@ -9,7 +9,7 @@ import { Call, useStreamVideoClient } from '@stream-io/video-react-sdk';
 import { useToast } from '@/hooks/use-toast';
 import { Textarea } from './ui/textarea';
 import ReactDatePicker from 'react-datepicker';
-
+import { Input } from "@/components/ui/input"
 const MeetingTypeList = () => {
 
   const router = useRouter()
@@ -117,6 +117,8 @@ const MeetingTypeList = () => {
         className="bg-blue-400"
       />
       
+
+      {/* Schedule Meeting */}
       {!callDetails ? (
         <MeetingModal
         isOpen={meetingState==='isScheduleMeeting'}
@@ -172,6 +174,7 @@ const MeetingTypeList = () => {
       />
       )}
 
+      {/* Instant Meeting Function */}
       <MeetingModal
         isOpen={meetingState==='isInstantMeeting'}
         onClose={()=> setMeetingState(undefined)}
@@ -181,6 +184,23 @@ const MeetingTypeList = () => {
         buttonText="Start Meeting"
         handleClick={createMeeting}
       />
+
+      {/* Join Meeting */}
+      <MeetingModal
+        isOpen={meetingState==='isJoiningMeeting'}
+        onClose={()=> setMeetingState(undefined)}
+        title="Type the link here"
+        className="text-center"
+        image="/icons/callify_logo.svg"
+        buttonText="Join Meeting"
+        handleClick={() => router.push(values.link)}
+      >
+        <Input
+          placeholder="Meeting link"
+          onChange={(e) => setValues({ ...values, link: e.target.value })}
+          className="border-none bg-dark-2 focus-visible:ring-0 focus-visible:ring-offset-0"
+        />
+      </MeetingModal>
     </section>
 
   )
