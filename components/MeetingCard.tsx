@@ -59,10 +59,8 @@ const MeetingCard = ({
         {!isPreviousMeeting && (
           <div className="flex gap-2">
             <Button onClick={handleClick} className="rounded bg-green-500 px-6">
-              {buttonIcon1 && (
-                <Image src={buttonIcon1} alt="feature" width={20} height={20} />
-              )}
-              &nbsp; {buttonText}
+              
+              {buttonText}
             </Button>
             <Button
               onClick={() => {
@@ -73,13 +71,7 @@ const MeetingCard = ({
               }}
               className="bg-green-500 px-6"
             >
-              <Image
-                src="/icons/copy.svg"
-                alt="feature"
-                width={20}
-                height={20}
-              />
-              &nbsp; Copy Link
+               Copy Link
             </Button>
           </div>
         )}
