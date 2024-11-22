@@ -164,7 +164,7 @@ const MeetingTypeList = () => {
         title="Meeting Created"
         className="text-center"
         image="/icons/callify_logo.svg"
-
+        checkedimage='/gifs/schedule.gif'
         handleClick={()=>{
           navigator.clipboard.writeText(meetingLink)
           toast({title:'Link Copied'})
