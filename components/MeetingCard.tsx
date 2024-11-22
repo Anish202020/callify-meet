@@ -31,6 +31,19 @@ const MeetingCard = ({
 
   return (
     <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-dark-1 px-5 py-8 xl:max-w-[568px]">
+      <div className="flex max-sm:hidden glassmorphism size-11 rounded-[10px]">
+         
+         <Image
+           src="/icons/callify_logo.svg"
+           alt="attendees"
+           width={40}
+           height={40}
+           className={cn("rounded-full")}
+           
+         />
+      
+       
+     </div>
       <article className="flex flex-col gap-5">
         <Image src={icon} alt="upcoming" width={28} height={28} />
         <div className="flex justify-between">
@@ -41,19 +54,7 @@ const MeetingCard = ({
         </div>
       </article>
       <article className={cn("flex justify-center relative", {})}>
-        <div className="flex max-sm:hidden glassmorphism size-11 rounded-[10px]">
-         
-            <Image
-              src="/icons/callify_logo.svg"
-              alt="attendees"
-              width={40}
-              height={40}
-              className={cn("rounded-full")}
-              
-            />
-         
-          
-        </div>
+        
         {!isPreviousMeeting && (
           <div className="flex gap-2">
             <Button onClick={handleClick} className="rounded bg-green-500 px-6">
