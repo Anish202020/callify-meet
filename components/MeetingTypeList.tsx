@@ -190,7 +190,7 @@ const MeetingTypeList = () => {
       <MeetingModal
         isOpen={meetingState==='isJoiningMeeting'}
         onClose={()=> setMeetingState(undefined)}
-        title="Join via a link"
+        title="Join via the Link"
         className="text-center"
         image="/icons/callify_logo.svg"
         buttonText="Join Meeting"
