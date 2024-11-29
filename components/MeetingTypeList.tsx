@@ -83,7 +83,7 @@ const MeetingTypeList = () => {
   return (
     <section className='grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4'>
       <HomeCard
-        img="/icons/add-meeting.svg"
+        img="/more-icons/plus-large-svgrepo-com.svg"
         title="New Meeting"
         description="Start an instant meeting"
         handleClick={() => setMeetingState('isInstantMeeting')}
@@ -92,7 +92,7 @@ const MeetingTypeList = () => {
       />
 
       <HomeCard 
-        img="/icons/join-meeting.svg"
+        img="/more-icons/people.svg"
         title="Join Meeting"
         description="Via invitation link"
         handleClick={() => setMeetingState('isJoiningMeeting')}
@@ -101,7 +101,7 @@ const MeetingTypeList = () => {
       />
 
       <HomeCard 
-        img="/icons/schedule.svg"
+        img="/more-icons/calender.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
         handleClick={() => setMeetingState('isScheduleMeeting')}
@@ -109,7 +109,7 @@ const MeetingTypeList = () => {
         className="bg-orange-400"
       />
       <HomeCard 
-        img="/icons/recordings.svg"
+        img="/icons/Video.svg"
         title="View Recordings"
         description="Check out your recordings"
         handleClick={() => router.push("/recordings")}
