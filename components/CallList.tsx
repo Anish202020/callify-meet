@@ -81,7 +81,7 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
                 ? '/icons/previous.svg'
                 : type === 'upcoming'
                   ? '/icons/upcoming.svg'
-                  : '/icons/recordings.svg'
+                  : '/icons/Video.svg'
             }
             title={
               (meeting as Call).state?.custom?.description ||

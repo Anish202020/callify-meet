@@ -69,7 +69,7 @@ export const words = [
   ];
 
 
-  export const avatarImages = [
+  export const Logo_Image = [
     '/icons/callify_logo.svg',
     
   ];
